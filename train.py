@@ -135,5 +135,5 @@ for epoch in range(EPOCHS):
     test(model, device, test_loader)
     scheduler.step(test_losses[epoch])
     print(f"Learning Rate = {optimizer.param_groups[0]['lr']}\n")
-    if (test_acc[epoch] > 99.4):
-      break
+    #if (test_acc[epoch] > 99.4):
+    #  break
